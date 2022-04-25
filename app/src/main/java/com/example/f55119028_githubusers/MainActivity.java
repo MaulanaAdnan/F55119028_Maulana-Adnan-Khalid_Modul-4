@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Toast.makeText(MainActivity.this,user.get(i).getName(), Toast.LENGTH_SHORT).show();
                 Log.d("Lihat", user.get(i).getName());
-                 startActivity(new Intent(MainActivity.this, DetailActivity.class));
+                //startActivity(new Intent(MainActivity.this, DetailActivity.class));
             }
         });
     }
@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
         progressBar.setVisibility(View.VISIBLE);
         AsyncHttpClient client = new AsyncHttpClient();
         String url = "https://api.github.com/users";
-        client.addHeader("Authorization", "token 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");
+        client.addHeader("Authorization", "token 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");
         client.addHeader("User-Agent","request");
 
         client.get(url, new AsyncHttpResponseHandler() {
