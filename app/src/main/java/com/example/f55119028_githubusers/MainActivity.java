@@ -46,8 +46,7 @@ public class MainActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Toast.makeText(MainActivity.this,user.get(i).getName(), Toast.LENGTH_SHORT).show();
                 Log.d("Lihat", user.get(i).getName());
-//                 startActivity(new Intent(MainActivity.this, DetailActivity.class));
-
+                 startActivity(new Intent(MainActivity.this, DetailActivity.class));
             }
         });
     }
